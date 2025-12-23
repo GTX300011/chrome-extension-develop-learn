@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extName__",
+  "version" : "1.0",
+  "homepage_url": "https://github.com/Creling/Yet-Another-LinkAce-Extension",
+  "description": "A Browser Extension for LinkAce",
+  "default_locale": "en",
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "icons": {
+    "128": "icons/128.png"
+  },
+  "background": {
+    "scripts": [
+      "js/background.js"
+    ]
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "__MSG_extName__"
+  },
+  "omnibox": { "keyword" : "l" }
+}
